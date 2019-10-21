@@ -1,0 +1,34 @@
+//Navbar
+.navbar-item{
+    padding: 30px;
+    font-family: $main-font;
+    text-decoration: none;
+    font-size: 15px;
+    color: $black;
+
+    img{
+        min-height: 7em;
+        min-width: 7em;
+    }
+
+    @include mq("tablet-large", "max"){
+        text-align: center;
+    }
+}
+
+
+
+//Bold text when link is active
+.navbar-link.is-active, a.navbar-item.is-active{
+    font-weight: bold;
+
+    @include mq("tablet-large", "max"){
+        color: $primary-color;
+    }
+}
+
+//Pink text when link is hovered
+.navbar-link:hover, a.navbar-item:hover{
+    color: $primary-color;
+    font-weight: bold;
+}

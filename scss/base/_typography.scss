@@ -1,0 +1,282 @@
+//Fonts
+body{
+    font-family: $main-font;
+}
+
+p{
+    font-family: $secondary-font;
+    font-size: 16px;
+}
+
+
+//Heading Sizes
+h1{
+    font-size: 100px; 
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+
+    @include mq("phablet", "max"){
+        font-size: 15px;
+    }
+}
+
+h4{
+    color: $primary-color;
+    padding-top: 10px;
+    font-size: 15px;
+    
+    @include mq("tablet", "max"){
+        font-size: 13px;
+    }
+}
+
+
+
+
+//Landing
+.landing{
+    h1{
+        color: $primary-color;
+    }
+
+    h2, p{
+        color: $white;
+    }
+
+    p{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    h2{
+        @include mq("desktop-mid", "max"){
+            font-size: 25px;
+        }
+
+        @include mq("tablet-wide", "max"){
+            font-size: 22px;
+        }
+
+        @include mq("tablet-mid", "max"){
+            font-size: 20px;
+        } 
+        
+        @include mq("phablet", "max"){
+            font-size: 17px;
+        } 
+
+    }
+    
+    //Landing header
+    h1{
+        @include mq("desktop-mid", "max"){
+            font-size: 87px;
+        }
+
+        @include mq("tablet-wide", "max"){
+            font-size: 75px;
+        }
+
+        @include mq("tablet-mid", "max"){
+            font-size: 60px;
+        }
+
+        @include mq("tablet", "max"){
+            font-size: 55px;
+        }
+
+        @include mq("tablet-small", "max"){
+            font-size: 48px;
+        }
+
+        @include mq("phablet", "max"){
+            font-size: 43px;
+        }
+
+        @include mq("phone-wide", "max"){
+            font-size: 38px;
+        }
+
+        @include mq("phone", "max"){
+            font-size: 33px;
+        }
+
+  
+
+    }
+
+    p{
+        @include mq("desktop-mid", "max"){
+            width: 100%;
+        }
+
+        @include mq("tablet-wide", "max"){
+            font-size: 15px;
+        }
+
+    }
+
+
+}
+
+
+
+//About
+.about{
+    p, h3{
+        padding-top: 10px;
+    }
+
+    i{
+        font-size: 20px;
+
+        @include mq("phablet", "max"){
+            font-size: 17px;
+        }
+    }
+
+    h4:hover{
+        font-weight: bold;
+    }
+
+    p{
+        @include mq("desktop", "max"){
+            padding: 20px;
+        }
+
+        @include mq("tablet", "max"){
+            padding: 0px;
+        }
+    }
+}
+
+
+
+
+
+//Events
+.events{
+    p{
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 40px;
+
+
+        @include mq("tablet", "max"){
+            width: 100%;
+        }
+    }
+
+    h1{
+        @include mq("tablet", "max"){
+                font-size: 70px;
+        }
+    
+        @include mq("phablet", "max"){
+            font-size: 45px;
+        }
+    } 
+    
+    a{
+        color: $black;
+    }
+}
+
+
+.events-grid{
+    h1, .white, h2{
+        color: $white;
+    }
+
+    h2{
+        padding-top: 50px;
+        font-size: 35px;
+    
+        @include mq("tablet", "max"){
+            padding-top: 0px;
+        }
+    
+        @include mq("phablet", "max"){
+            font-size: 18px;
+        } 
+    }
+
+    .yellow{
+        color: $yellow;
+        padding-top: 20px;
+    
+        @include mq("tablet", "max"){
+            padding-top: 0px;
+        }
+    
+        @include mq("phablet", "max"){
+            font-size: 13px;
+        }
+    }
+    
+    .white{
+        padding-top: 10px;
+        font-weight: normal;
+    
+        @include mq("tablet", "max"){
+            padding-top: 0px;
+        }
+    
+        @include mq("phablet", "max"){
+            font-size: 13px;
+        }
+    }
+}
+
+
+//What We Do
+.what-we-do{
+    i{
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-top: 80px;
+    }
+
+    h4:hover{
+        font-weight: bold;
+    }
+
+
+    //Increased specifity for this to work.
+    .is-one-third h3{
+        color: $primary-color;
+    }
+}
+
+
+
+
+//Footer
+footer{
+    i{
+        color: $primary-color;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    i:hover{
+        color: $light-pink;
+    }
+
+    h3{
+        color: $white;
+        padding-bottom: 10px;
+    }
+
+    a{
+        text-decoration: underline;
+        color: $primary-color;
+    }
+}

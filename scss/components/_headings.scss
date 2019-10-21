@@ -1,0 +1,43 @@
+// Generic title styles
+.about h2, .header h2, .what-we-do h2{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    border-bottom: 2px solid $black;
+    color: $black;
+    padding-bottom: 20px;
+
+    @include mq("phablet", "max"){
+        font-size: 20px;
+        border-bottom: 1px solid $black;
+
+    }
+}
+
+
+//Individual title widths
+.about h2{
+    width: 150px;
+
+    @include mq("phablet", "max"){
+        width: 100px;
+    }
+}
+
+.header h2{
+    width: 350px;
+
+    @include mq("phablet", "max"){
+        width: 200px;
+    }
+}
+
+.what-we-do h2{
+    width: 250px;
+
+    @include mq("phablet", "max"){
+        width: 160px;
+    }
+}
+
+

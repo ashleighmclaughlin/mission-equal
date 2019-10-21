@@ -1,0 +1,37 @@
+//Container width
+.container{
+    width: 65%;
+    margin: 0 auto;
+
+    @include mq("desktop-mid", "max"){
+        width: 80%;
+    }
+
+    @include mq("phone-wide", "max"){
+        width: 90%;
+    } 
+}
+
+
+//Pushes element to bottom
+.bottom-row{
+    display: flex;
+    align-self: flex-end;
+    padding-left: 100px;
+
+    @include mq("tablet", "max"){
+        padding-left: 0px;
+    } 
+}
+
+
+//Footer
+footer{
+    background-color: $black;
+    padding-top: 70px;
+
+    .columns{
+        padding-bottom: 60px;
+    }
+}
+

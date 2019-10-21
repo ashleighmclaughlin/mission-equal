@@ -1,0 +1,55 @@
+//Global Button Style
+.btn{
+    border-radius: 50px;
+    color: $white;
+    font-size: 17px;
+    background-color: $primary-color;
+    width: 200px;
+    height: 40px;
+    border: none;
+    display: inline-block;
+
+    @include mq("tablet", "max"){
+        width: 170px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
+
+//What We Do Button
+.what-we-do{
+    .btn{
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    //Border when hovered
+    .btn:hover{
+        border: 2px solid $primary-color;
+    }
+}
+
+
+//General Button hover
+.btn:hover{
+    background-color: $white;
+    color: $primary-color;
+}
+
+    
+
+//General Button when clicked
+.btn:focus{
+    border: none;
+    color: $white;
+}
+
+
+//Horizontally centers button content
+.horizontal-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

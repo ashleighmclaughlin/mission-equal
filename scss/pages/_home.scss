@@ -1,0 +1,160 @@
+//Section spacing
+.about, .events, .what-we-do{
+    padding-top: 70px;
+    padding-bottom :70px;
+}
+
+
+//About
+.about{
+    .columns{
+        padding-top: 40px;
+    }
+
+    img{
+        @include mq("desktop", "max"){
+            max-width: 300px;
+        }
+    }
+}
+
+
+//Events
+.events{
+    background-color: $light-pink;
+
+    .header{
+        padding-bottom: 80px;
+
+        @include mq("tablet-wide", "max"){
+            padding-bottom: 50px;
+        }
+    }
+}
+
+
+//Events Grid
+.events-grid{
+        .is-half{
+        max-width: 550px;
+        min-height: 300px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include mq("x-large", "max"){
+            max-width: 500px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            min-height: 250px;
+        }
+
+        @include mq("large", "max"){
+            min-width: 450px;
+            margin: 0 auto;
+        }
+
+        @include mq("tablet-wide", "max"){
+            margin-bottom: 20px;
+            min-width: 70%;
+        }
+
+        @include mq("tablet", "max"){
+            min-height: 150px;
+        }
+
+        @include mq("phablet", "max"){
+            max-height: 190px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    //Background images for events
+    .grid{
+        background-image: url(../../img/march.jpg);
+    }
+
+    .grid2{
+        background-image: url(../../img/rugby.jpg);
+    }
+
+    .grid3{
+        background-image: url(../../img/pay-gap.jpg);
+    }
+
+
+    //Image sourced from Instagram user 'kailashoots' with permission.
+    .grid4{
+        background-image: url(../../img/maori-event.jpg);
+    }
+}
+
+
+
+//What We Do
+.what-we-do{
+    padding-bottom: 100px;
+    
+    img{
+        max-width: 90%;
+        
+        @include mq("tablet-wide", "max"){
+            max-width: 100%;
+        }
+    }
+
+    .is-vcentered{
+        padding-bottom: 80px;
+    }
+
+    .is-one-third{
+        padding: 30px;
+    }
+
+    .is-one-third p{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .columns{
+        padding-top: 60px;
+    }
+
+    .line-break{
+        border-top: 2px solid $black;
+        width: 60%;
+        margin: 0 auto;
+    
+        @include mq("phablet", "max"){
+            border-top: 1px solid $black;
+        }
+    }
+}
+
+
+
+//Re orders columns at mobile size
+@media screen and (max-width: 769px) {
+    .mobile-order {
+      display: flex;
+      flex-flow: column;
+    }
+    .mobile-order .mo-1 {
+      order: 1;
+    }
+    .mobile-order .mo-2 {
+      order: 2;
+    }
+    .mobile-order .mo-3 {
+      order: 3;
+    }
+    .mobile-order .mo-4 {
+      order: 4;
+    }
+    .about img{
+        max-width: 250px;
+    }
+  }

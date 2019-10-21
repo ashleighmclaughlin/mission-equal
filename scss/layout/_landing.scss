@@ -1,0 +1,26 @@
+.hero{
+    max-height: 700px;
+}
+
+//Landing Image
+.landing{
+    background-image: url("../../img/landing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    min-height: 650px;
+    background-attachment: fixed;
+
+    @include mq("tablet", "max"){
+        min-height: 500px;
+    }
+
+    @include mq("phablet", "max"){
+        min-height: 400px;
+    }
+    
+}
+
+
+
+
